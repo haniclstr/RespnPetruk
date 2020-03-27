@@ -15,7 +15,7 @@ int main(){
 	
 	int n = 0, min = 0, max = 0;
 
-	cout << "\Masukkan jumlah bilangan : ";
+	cout << "\nMasukkan jumlah bilangan : ";
 	cin >> n;
 	
 	int bil[n];
