@@ -33,6 +33,15 @@ int main(){
 		if (max < *(ptr + i)) {
 			max = *(ptr + i);
 		}
+		else if (min > *(ptr + i)) {
+			min = *(ptr + i);
+		}
+	}
+	cout << "\nBilangan Terkecil = " << min << endl;
+	cout << "Bilangan Terbesar = " << max;
+	
+	return 0;
+}
 	}
 	
 	return 0;
