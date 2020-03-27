@@ -18,5 +18,22 @@ int main(){
 	cout << "\Masukkan jumlah bilangan : ";
 	cin >> n;
 	
+	int bil[n];
+	for(int i = 0; i < n; i++) {
+		cout << "Masukkan bilangan ke " << i + 1 << " : ";
+		cin >> bil[i];
+	}
+
+	int *ptr;
+	ptr = bil;
+	max = min = *ptr;
+
+	for(int i = 0; i < n; i++) {
+
+		if (max < *(ptr + i)) {
+			max = *(ptr + i);
+		}
+	}
+	
 	return 0;
 }
